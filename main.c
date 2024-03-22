@@ -49,6 +49,9 @@ void menu() {
             case 1:
                 cadastrar();
                 break;
+            case 2:
+                remover();
+                break;
             case 5:
                 listar();
                 break;
@@ -101,6 +104,14 @@ void cadastrar() {
 }
 
 void remover() {
+    int matricula;
+    listar();
+    printf("\nDigite a matrícula do aluno a ser removido: ");
+    scanf("%d", &matricula);
+    --matricula;
+    alunos[matricula].ativo = 0;
+    printf("\nAluno excluido com sucesso.  \n");
+    getchar();
 
 }
 
@@ -120,6 +131,7 @@ void listar() {
     {
         if (alunos[i].ativo == 1)
         {
+            printf("Matrícula: %d\n", i+1);
             printf("Nome: %s\n", alunos[i].nome);
             printf("1º Bimestre %0.2f\n", alunos[i].notas[0]);
             printf("2º Bimestre %0.2f\n", alunos[i].notas[1]);

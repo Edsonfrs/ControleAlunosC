@@ -1,7 +1,7 @@
 # Projeto - Linguagem C
 
 ## Descrição
-Projeto Linguagem C para ampliação de conhecimento dessa linguagem para melhor aproveitamento estudos da cedeira de Estrutura de Dados da Faculdade VINCIT. 
+Projeto Linguagem C para ampliação de conhecimento dessa linguagem para melhor aproveitamento dos estudos da cadeira de Estrutura de Dados da Faculdade VINCIT. 
 
 ## Tecnologia Utilizada
 - Linguagem C
