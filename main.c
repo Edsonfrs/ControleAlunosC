@@ -52,6 +52,9 @@ void menu() {
             case 2:
                 remover();
                 break;
+            case 4:
+                pesquisar();
+                break;
             case 5:
                 listar();
                 break;
@@ -121,11 +124,41 @@ void reprovados() {
 
 void pesquisar() {
 
+
+    char nome[50];
+    int op;
+    do {
+        system("clear"); // For Linux
+        //system("cls"); // For Windows
+        printf("\nDigite o nome do aluno a ser pesquisado:\n ");
+        fgets(nome,sizeof(nome),stdin);
+
+        for (int i = 0; i < MAX_ALUNOS; ++i)
+        {
+
+            if (strstr(alunos[i].nome, nome) != NULL )
+            {
+                printf("Matrícula: %d\n", i+1);
+                printf("Nome: %s\n", alunos[i].nome);
+                printf("1º Bimestre %0.2f\n", alunos[i].notas[0]);
+                printf("2º Bimestre %0.2f\n", alunos[i].notas[1]);
+                printf("3º Bimestre %0.2f\n", alunos[i].notas[2]);
+                printf("4º Bimestre %0.2f\n", alunos[i].notas[3]);
+                printf("\n---------------------------------------\n");
+            }
+        }
+        printf("\n1 - Continuar \n0 - Sair \n");
+        scanf("%d", &op);
+        getchar();
+    } while (op != 0);
+
+
 }
 
 void listar() {
     system("clear"); // For Linux
     //system("cls"); // For Windows
+
     printf("\nLISTA DE ALUNOS\n");
     for (int i = 0; i < MAX_ALUNOS; ++i)
     {
