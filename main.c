@@ -6,7 +6,8 @@
 #define MAX_ALUNOS 50
 
 // Definindo a struct que armazenará os dados dos alunos
-typedef struct {
+typedef struct
+{
     char nome[50];
     float notas[4];
     int ativo;
@@ -51,6 +52,9 @@ void menu() {
                 break;
             case 2:
                 remover();
+                break;
+            case 3:
+                reprovados();
                 break;
             case 4:
                 pesquisar();
@@ -97,7 +101,6 @@ void cadastrar() {
                 alunos[i].ativo = 1;
                 break;
             }
-
         }
 
         printf("\n1 - Continuar \n0 - Sair \n");
@@ -120,11 +123,35 @@ void remover() {
 
 void reprovados() {
 
+    system("clear"); // For Linux
+    //system("cls"); // For Windows
+    float media;
+
+    printf("\nLISTA DE ALUNOS REPROVADOS\n");
+    for (int i = 0; i < MAX_ALUNOS; ++i)
+    {
+        if (alunos[i].ativo == 1)
+        {
+            media = 0;
+            media = (alunos[i].notas[0] + alunos[i].notas[1] + alunos[i].notas[2] + alunos[i].notas[3]) / 4;
+
+            if (media < 7.0)
+            {
+                printf("Matrícula: %d\n", i+1);
+                printf("Nome: %s\n", alunos[i].nome);
+                printf("1º Bimestre %0.2f\n", alunos[i].notas[0]);
+                printf("2º Bimestre %0.2f\n", alunos[i].notas[1]);
+                printf("3º Bimestre %0.2f\n", alunos[i].notas[2]);
+                printf("4º Bimestre %0.2f\n", alunos[i].notas[3]);
+                printf("\n---------------------------------------\n");
+            }
+
+        }
+    }
+    getchar();
 }
 
 void pesquisar() {
-
-
     char nome[50];
     int op;
     do {
@@ -155,7 +182,8 @@ void pesquisar() {
 
 }
 
-void listar() {
+void listar()
+{
     system("clear"); // For Linux
     //system("cls"); // For Windows
 

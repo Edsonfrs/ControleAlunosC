@@ -8,10 +8,10 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/opt/clionEdu/bin/cmake/linux/x64/bin/cmake",
-			"cpack" : "/opt/clionEdu/bin/cmake/linux/x64/bin/cpack",
-			"ctest" : "/opt/clionEdu/bin/cmake/linux/x64/bin/ctest",
-			"root" : "/opt/clionEdu/bin/cmake/linux/x64/share/cmake-3.27"
+			"cmake" : "/opt/clion/bin/cmake/linux/x64/bin/cmake",
+			"cpack" : "/opt/clion/bin/cmake/linux/x64/bin/cpack",
+			"ctest" : "/opt/clion/bin/cmake/linux/x64/bin/ctest",
+			"root" : "/opt/clion/bin/cmake/linux/x64/share/cmake-3.27"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-dfd62d238d3fceeaea87.json",
+			"jsonFile" : "codemodel-v2-6383d270aa352714b2f2.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-38edc3388c27dbd40929.json",
+			"jsonFile" : "cache-v2-74c2abc8d101b8c3e843.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-6a2fdc11127d5bd68ac7.json",
+			"jsonFile" : "cmakeFiles-v1-7b4a3165d0d98230e2c3.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-38edc3388c27dbd40929.json",
+			"jsonFile" : "cache-v2-74c2abc8d101b8c3e843.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-6a2fdc11127d5bd68ac7.json",
+			"jsonFile" : "cmakeFiles-v1-7b4a3165d0d98230e2c3.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-dfd62d238d3fceeaea87.json",
+			"jsonFile" : "codemodel-v2-6383d270aa352714b2f2.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
